@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Calculation Result</h1>
+
+    <p th:text="${result}"></p>
+
+    <form action="http://localhost:9090/calculate">
+        <label for="num1">Enter Value1</label> <input id="num1" name="num1" type="number"> <br>
+        <label for="num1">Enter Value1</label> <input id="num2" name="num2" type="number"> <br>
+
+        <button type="submit" value="add" id="add" name="operation">Add</button>
+        <button type="submit" value="subtract" id="subtract" name="operation">Subtract</button>
+        <button type="submit" value="multiply" id="multiply" name="operation">Multiply</button>
+        <button type="submit" value="divide" id="divide" name="operation">Divide</button>
+    </form>
+</body>
+</html>

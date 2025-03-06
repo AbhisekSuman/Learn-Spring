@@ -1,0 +1,13 @@
+package com.example.firstSpringApp;
+
+public class Developer {
+	Laptop laptop;
+	public Developer(Laptop laptop) {
+		this.laptop = laptop;
+	}
+	
+	public void develope() {
+		laptop.build();
+		System.out.println("After Developing..");
+	}
+}
