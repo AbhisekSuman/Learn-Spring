@@ -8,9 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.web.bind.annotation.*;
 
 import javax.crypto.SecretKey;
-import java.util.Base64;
 import java.util.Date;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
@@ -80,6 +78,7 @@ public class TokenValidationController {
 
             String subject = claims.getSubject();
             String  role = (String) claims.get("role");
+
 
             return "Subject: " + subject + " Role: " + role;
         } catch (Exception e) {
