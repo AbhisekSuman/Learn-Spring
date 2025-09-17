@@ -34,3 +34,73 @@ It provides a seamless shopping experience for customers while offering powerful
 
 ## 📂 Project Structure
 
+salessavvy/
+├── Frontend/
+│ └── salessavvy/ # React frontend
+│
+└── BackEnd/
+└── salessavvy/ # Spring Boot backend
+
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v14+)
+- [Java JDK](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html) (v17+ recommended)
+- [MySQL](https://dev.mysql.com/downloads/) (v8+)
+
+### Backend Setup (Spring Boot)
+```bash
+cd BackEnd/salessavvy
+# Configure your MySQL credentials in application.properties
+# Example:
+# spring.datasource.url=jdbc:mysql://localhost:3306/salessavvy
+# spring.datasource.username=root
+# spring.datasource.password=yourpassword
+
+./mvnw spring-boot:run
+
+cd Frontend/salessavvy
+npm install
+npm start
+
+cd Frontend/salessavvy
+npm install
+npm start
+📖 Usage
+
+Visit the app in your browser (http://localhost:3000)
+
+Sign up or log in
+
+Browse products, add to cart, and place orders
+
+Use the Admin Dashboard (accessible for admin users) to:
+
+Manage products
+
+View customer orders
+
+Generate sales reports
+
+🛠️ Future Enhancements
+
+🌐 Multi-language & multi-currency support
+
+📱 Mobile app integration
+
+🤖 AI-based product recommendations
+
+🔔 Email & SMS notifications
+
+🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork the repo and create a pull request.
+
+📜 License
+
+This project is licensed under the MIT License – you are free to use, modify, and distribute it.
